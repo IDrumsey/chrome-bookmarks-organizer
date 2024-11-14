@@ -71,6 +71,13 @@ function App() {
             >
               <CircularProgress />
             </Box>
+            <Typography
+              variant="h6"
+              textAlign="left"
+              marginBottom={2}
+            >
+              Your current bookmarks
+            </Typography>
             <BookmarkTree nodes={bookmarksToShow} />
           </>
         ) : (
@@ -91,16 +98,18 @@ function App() {
       {/* footer */}
       <Box sx={{ marginTop: "auto" }}>
         {/* organize button */}
-        <Button
-          variant="contained"
-          fullWidth
-          onClick={() => {
-            modeSetter("discovering_bookmarks")
-            discoverBookmarksStep()
-          }}
-        >
-          Organize
-        </Button>
+        {mode == "waiting" && (
+          <Button
+            variant="contained"
+            fullWidth
+            onClick={() => {
+              modeSetter("discovering_bookmarks")
+              discoverBookmarksStep()
+            }}
+          >
+            Organize
+          </Button>
+        )}
       </Box>
     </Box>
   )
