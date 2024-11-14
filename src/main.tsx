@@ -31,7 +31,7 @@ const theme = createTheme({
       fontSize: "0.937rem",
     },
     caption: {
-      fontSize: "0.878rem",
+      fontSize: "0.608rem",
     },
   },
 })
