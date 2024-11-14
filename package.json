@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "buildw": "tsc -b && vite build --watch",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/chrome": "^0.0.281",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

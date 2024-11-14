@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Bookmarks Organizer",
+  "version": "1.0.0",
+  "description": "Organizes your chrome bookmarks using an LLM",
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "permissions": ["bookmarks", "sidePanel"],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "action": {
+    "default_icon": {
+      "128": "images/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
